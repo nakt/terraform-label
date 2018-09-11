@@ -15,10 +15,10 @@ locals {
   id_order_list = ["namespace", "environment", "name"]
 
   generated_tags = {
+    "Name"        = "${local.id}"
     "Namespace"   = "${local.namespace}"
-    "Name"        = "${local.name}"
-    "Owner"       = "${local.owner}"
     "Environment" = "${local.environment}"
+    "Owner"       = "${local.owner}"
     "Terraform"   = "true"
   }
 
