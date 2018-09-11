@@ -1,4 +1,4 @@
-locals {
+invalid_locals {
   namespace   = "${lower(replace(var.namespace, "/[^a-zA-Z0-9]/",""))}"
   environment = "${lower(replace(var.environment, "/[^a-zA-Z0-9]/",""))}"
   name        = "${lower(replace(var.name, "/[^a-zA-Z0-9]/",""))}"
