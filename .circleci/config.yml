@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: hashicorp/terraform:0.11.4
+      - image: hashicorp/terraform:0.12.0
     working_directory: ~/repos/github.com/nakt/terraform-label
     steps:
       - checkout
