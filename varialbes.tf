@@ -1,35 +1,35 @@
 variable "namespace" {
-  type        = "string"
-  default     = ""
   description = "Organization name or abbreviation"
+  type        = string
+  default     = ""
 }
 
 variable "environment" {
-  type        = "string"
-  default     = ""
   description = "e.g 'prd'. 'stg', 'dev', 'UAT'"
+  type        = string
+  default     = ""
 }
 
 variable "name" {
-  type        = "string"
-  default     = ""
   description = "e.g 'api', 'managementtools'"
+  type        = string
+  default     = ""
 }
 
 variable "delimiter" {
-  type        = "string"
-  default     = "-"
   description = "Delimiter to be used between each parameters"
+  type        = string
+  default     = "-"
 }
 
 variable "owner" {
-  type        = "string"
-  default     = ""
   description = "email address of environment owner"
+  type        = string
+  default     = ""
 }
 
 variable "tags" {
-  type        = "map"
-  default     = {}
   description = "Additional tags"
+  type        = map(string)
+  default     = {}
 }

@@ -22,25 +22,6 @@ output "id" {
   value = "${module.label.id}"
 }
 ```
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| delimiter | Delimiter to be used between each parameters | string | `-` | no |
-| environment | e.g 'prd'. 'stg', 'dev', 'UAT' | string | `` | no |
-| name | e.g 'api', 'managementtools' | string | `` | no |
-| namespace | Organization name or abbreviation | string | `` | no |
-| owner | email address of environment owner | string | `` | no |
-| tags | Additional tags | map | `<map>` | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| environment | Normalized environment name |
-| id | Genereted ID |
-| name | Normalized name |
-| namespace | Normalized name space |
-| tags | Normalized tag map |
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
