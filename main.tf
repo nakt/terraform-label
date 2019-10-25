@@ -22,6 +22,12 @@ locals {
     "Terraform"   = "true"
   }
 
+  tags_as_list_of_maps = flatten([
+    for key in keys(local.tags) : {
+      key   = key
+      value = local.tags[key]
+  }])
+
   id = lower(join(local.delimiter, compact(list(
     local.id_context[element(local.id_order_list, 0)],
     local.id_context[element(local.id_order_list, 1)],
